@@ -4,3 +4,10 @@ development:
   database: testone_dev
   username: root
   password: 
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: testone_prod
+  username: root
+  password: 
