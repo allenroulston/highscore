@@ -20,6 +20,8 @@ gem 'cancan', '~> 1.6', '>= 1.6.10'
 # use mysql database
 gem 'mysql2', '~> 0.4.2'
 
+gem 'pg'
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
