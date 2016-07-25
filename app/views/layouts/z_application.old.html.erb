@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  
+      <p class="notice">NOTICE THIS: <%= notice %></p>
+      <p class="alert">ALERT ME: <%= alert %></p>
+	  
+	  
+    <title>Testone</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+  <nav role="navigation">
+      <div class="inner">
+          <a href="#nav" class="nav-collapse" id="nav-collapse">Menu</a>
+          <ul class="nav" id="nav">
+              <li><%= link_to "Home", root_path %></li>
+          
+              <li><%= link_to "High Scores", high_scores_path %></li>
+              <li><%= link_to "New High Score", new_high_score_path %></li>
+          </ul>
+      </div>
+  </nav>
+  
+  <body>
+	<p>start yielding:</p>
+	<%= yield %>
+  </body>
+  
+  <p>
+    <% if user_signed_in? %>
+      <li>
+
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+      </li>
+    <% else %>
+      <li>
+      <%= link_to('Login', new_user_session_path)  %>  
+      </li>
+    <% end %>
+  </p>
+  
+</html>

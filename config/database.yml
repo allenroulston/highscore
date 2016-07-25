@@ -1,0 +1,6 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: testone_dev
+  username: root
+  password: 

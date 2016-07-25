@@ -1,0 +1,41 @@
+    <div id="main-container" class="container">
+       <div class="row" class="col-xs-16" class="img-responsive" >  
+          <div id="myGallery" class="col-xs-5" class="img-responsive">			
+			  <%= image_tag "pGuard.png"  %>
+    	  </div>
+			        
+		  <nav role="navigation">
+		      <div class="inner">
+		          <a href="#nav" class="nav-collapse" id="nav-collapse"></a>
+		          <ul class="nav" class="col-md-8" id="nav">
+		              <li><%= link_to "<b>Home Base</b>".html_safe , root_path, class: 'btn btn-default btn-sm' %></li>
+		              <li><%= link_to "High     Scores", high_scores_path, class: 'btn btn-default btn-sm' %></li>
+		              <li><%= link_to "New High Score", new_high_score_path, class: 'btn btn-default btn-sm' %></li>
+		              <li><%= link_to "<b>Home Base</b>".html_safe , root_path, class: 'btn btn-default btn-sm' %></li>
+		              <li><%= link_to "High     Scores", high_scores_path, class: 'btn btn-default btn-sm' %></li>
+		              <li><%= link_to "New High Score", new_high_score_path, class: 'btn btn-default btn-sm' %></li>
+					  
+					  
+					  <% if user_signed_in? %>
+					  <li>
+       				  <%= link_to(' Logout', destroy_user_session_path, :method => :delete, class: 'btn btn-default btn-sm') %>
+					  </li>	        
+					  <% else %>
+					  <li>
+					  <%= link_to(' Login', new_user_session_path, class: 'btn btn-default btn-sm' ) %>  
+					  </li>
+					  <% end %>
+				      <class="notice"> <li><%= notice %> </li>
+					  <class="alert"> <li> <%= alert %></li>
+		          </ul>
+		      </div>
+		  </nav>
+		  
+
+
+      </div>
+    </div>
+
+
+
+
