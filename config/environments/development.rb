@@ -28,6 +28,9 @@ Rails.application.configure do
   
   # added for DEVISE as per install message
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
+  # It turns out I needed to set (as per an stack overflow article) to get Devise Destroy Logout Working (???)
+  config.serve_static_assets = true
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false

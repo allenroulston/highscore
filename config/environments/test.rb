@@ -18,6 +18,9 @@ Rails.application.configure do
     'Cache-Control' => 'public, max-age=3600'
   }
 
+  # It turns out I needed to set (as per an stack overflow article) to get Devise Destroy Logout Working (???)
+  config.serve_static_assets = true
+  
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
