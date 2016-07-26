@@ -16,15 +16,18 @@
 // Custom bootstrap variables must be set or imported before bootstrap itself.
 @import "bootstrap";
 
-.btn {
+.btn-sm {
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
+   background-color: yellow;
+   color: yellow;
+   
 }
 
   
   a:link {
-      background-color: white;
+      background-color: yellow;
   }
 
   a:visited {
@@ -32,10 +35,10 @@
   }
 
   a:hover {
-      background-color: white;
+      background-color: cyan;
 	  font-weight: bold;
   }
 
   a:active {
-      background-color: white;
+      background-color: red;
   }
