@@ -19,26 +19,31 @@
 .btn-sm {
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
+   width: 100px;
    border-radius: 5px;
-   background-color: yellow;
-   color: yellow;
+   border: 2px solid grey;
+   background-color: white;
+   color: red;
+   text-align: center;
+   padding: 10px 5px;
+   font-weight: bold;
    
 }
 
   
-  a:link {
+  aa:link {
       background-color: yellow;
   }
 
-  a:visited {
+  aa:visited {
       background-color: white;
   }
 
-  a:hover {
+  aa:hover {
       background-color: cyan;
 	  font-weight: bold;
   }
 
-  a:active {
+  aa:active {
       background-color: red;
   }
