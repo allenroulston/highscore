@@ -39,7 +39,7 @@ table, th, td {
 		                <td><%= link_to "Scores", high_scores_path, class: 'btn btn-default btn-sm' %></td>
 		                <td>
 	  					  <% if user_signed_in? %>
-	         				<%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'btn btn-default btn-sm') %>
+	         				<%= link_to('Logout', destroy_user_session_path, :method => :delete, class: 'btn btn-default btn-sm') %>
 	  					  <% else %>
 	  					    <%= link_to('Login', new_user_session_path, class: 'btn btn-default btn-sm' ) %>  
 	  					  <% end %>
