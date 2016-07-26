@@ -14,9 +14,10 @@ table, th, td {
 		            
 						<td><table>
 							<tr>
-						<td><%= button_to "Home", root_path %></td>
-		                <td><%= button_to "High Scores", high_scores_path %></td>
-		                <td><%= button_to "Add Score", new_high_score_path %></td>
+								
+						<td><%= link_to "Home", root_path, class: 'btn btn-default btn-sm' %></td>
+		                <td><%= link_to "Scores", high_scores_path, class: 'btn btn-default btn-sm' %></td>
+		                <td><%= link_to "Add Score", new_high_score_path, class: 'btn btn-default btn-sm' %></td>
                             </tr>
 							<tr>
 						<td><%= button_to "Home", root_path %></td>
