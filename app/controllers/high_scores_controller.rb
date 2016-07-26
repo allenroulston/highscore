@@ -11,6 +11,7 @@ class HighScoresController < ApplicationController
   # GET /high_scores/1
   # GET /high_scores/1.json
   def show
+    @high_score = HighScore.find(params[:id])
   end
 
   # GET /high_scores/new
